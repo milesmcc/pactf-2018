@@ -175,15 +175,15 @@ class _Django(Configuration):
 
     email_prefix = 'EMAIL'
 
-    EMAIL_HOST = values.Value('', environ_prefix=None)
+    EMAIL_HOST = values.Value('smtp.sendgrid.net', environ_prefix=None)
     EMAIL_PORT = values.IntegerValue(61539, environ_prefix=None)
     EMAIL_USE_TLS = values.BooleanValue(True, environ_prefix=None)
 
-    EMAIL_HOST_USER = values.Value('noreply@pactf.com', environ_prefix=None)
+    EMAIL_HOST_USER = values.Value('apikey', environ_prefix=None)
     EMAIL_HOST_PASSWORD = values.SecretValue(environ_prefix=None)
 
-    DEFAULT_FROM_EMAIL = values.Value(EMAIL_HOST_USER.value, environ_prefix=email_prefix)
-    SERVER_EMAIL = values.Value(EMAIL_HOST_USER.value, environ_prefix=None)
+    DEFAULT_FROM_EMAIL = values.Value(EMAIL_HOST_PASSWORD.value, environ_prefix=email_prefix)
+    SERVER_EMAIL = values.Value(EMAIL_HOST_PASSWORD.value, environ_prefix=None)
 
     EMAIL_BACKEND = values.Value('post_office.EmailBackend', environ_prefix=None)
     EMAIL_CRON = values.BooleanValue(False, environ_prefix=None)
@@ -425,7 +425,7 @@ class Prod(_Base):
     ''' Security '''
 
     DEBUG = False
-    ALLOWED_HOSTS = values.ListValue(['.pactf.com', '.pactf2.cf'])
+    ALLOWED_HOSTS = values.ListValue(['2018.pactf.com', 'localhost', '127.0.0.1'])
 
     https = values.Value(True)  # For settings that should only be true when using HTTPS
     SESSION_COOKIE_SECURE = https.value
