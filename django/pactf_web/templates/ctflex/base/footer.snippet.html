@@ -3,6 +3,7 @@
 <p id="footer-text" class="text-muted">
   © PACTF {% now "Y" %}
   | <a target="_blank" href="https://2016.pactf.com">PACTF 2016</a>
+  | <a target="_blank" href="https://2017.pactf.com">PACTF 2017</a>
   | <a target="_blank" href="https://pactf.statuspage.io/">System Status</a>
   | <a target="_blank" href="mailto:{{ contact_email }}">Contact Us</a>
   | Made with
@@ -20,10 +21,6 @@
 
     <a href="{% url 'ctflex:sponsors' %}">
       <img src="{% static 'pactf_web/img/sponsors/digitalocean/blue.smaller.png' %}"/>
-    </a>
-
-    <a href="{% url 'ctflex:sponsors' %}">
-      <img src="{% static 'pactf_web/img/sponsors/jpmorgan/transparent.padded.png' %}"/>
     </a>
 
   {% endif %}
