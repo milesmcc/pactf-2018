@@ -241,10 +241,15 @@ class _Django(Configuration):
                     'filename': join(BASE_DIR, 'logs', 'ctflex.log'),
                     'formatter': 'detailed',
                 },
+                'debug_file': {
+                    'level': "DEBUG",
+                    'class': 'logging.FileHandler',
+                    'filename': join(BASE_DIR, 'logs', 'debug.log'),
+                    'formatter': 'detailed',
+                },
                 'console': {
                     'level': 'DEBUG',
                     'class': 'logging.StreamHandler',
-                    'filename': join(BASE_DIR, 'logs', 'console.log'),
                     'formatter': 'detailed',
                 },
                 'mail_admins': {
