@@ -182,8 +182,8 @@ class _Django(Configuration):
     EMAIL_HOST_USER = values.Value('apikey', environ_prefix=None)
     EMAIL_HOST_PASSWORD = values.SecretValue(environ_prefix=None)
 
-    DEFAULT_FROM_EMAIL = values.Value('contact@pactf.com', environ_prefix=email_prefix)
-    SERVER_EMAIL = values.Value('contact@pactf.com', environ_prefix=None)
+    DEFAULT_FROM_EMAIL = values.Value('noreply@pactf.com', environ_prefix=email_prefix)
+    SERVER_EMAIL = values.Value('noreply@pactf.com', environ_prefix=None)
 
     EMAIL_BACKEND = values.Value('post_office.EmailBackend', environ_prefix=None)
     EMAIL_CRON = values.BooleanValue(False, environ_prefix=None)
@@ -440,8 +440,8 @@ class Prod(_Base):
     ''' Logging '''
 
     ADMINS = values.ListValue([
-        ('Yatharth', 'yatharth999+pactf@gmail.com'),
-        ('Tony', 'tony@tonytan.io'),
+        ('Miles', '0@rmrm.io'),
+        ('Darcy', 'dmeyer@andover.edu'),
         # ('PACTF Errors', _Django.SERVER_EMAIL.value)
     ])
 
