@@ -244,6 +244,7 @@ class _Django(Configuration):
                 'console': {
                     'level': 'DEBUG',
                     'class': 'logging.StreamHandler',
+                    'filename': join(BASE_DIR, 'logs', 'console.log'),
                     'formatter': 'detailed',
                 },
                 'mail_admins': {
