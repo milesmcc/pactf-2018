@@ -117,6 +117,14 @@
 
   <h2>Silver Sponsors</h2>
 
+  {% with title='Information Networking Institute' link='https://www.cmu.edu/ini/' image='pactf_web/img/sponsors/ini/big.png' %}
+    {% sponsor %}
+      Makers and thinkers, hackers and scholars, researchers and programmers – find your spark of genius at the <a target="_blank" href="{{ link }}">INI</a>.</p>
+      A rigorous technical curriculum, practical, industry-oriented topics and real-world project experience – this unique combination empowers INI students to be the movers and shakers of the tech industry.
+      All INI master's degree programs provide an advanced, specialized curriculum combining computer science, electrical and computer engineering, software engineering and information systems while incorporating business and policy perspectives.
+    {% endsponsor %}
+  {% endwith %}
+
   {% with title='Cloudflare' link='https://www.cloudflare.com/' image='pactf_web/img/sponsors/cloudflare.png' %}
     {% sponsor %}
       Here at <a target="_blank" href="{{ link }}">Cloudflare</a>,
@@ -129,13 +137,6 @@
       <a href="{{ link }}"
          target="_blank">Carnegie Mellon CyLab</a>
       is a bold and visionary effort, which establishes public-private partnerships to develop new technologies for measurable, secure, available, trustworthy, and sustainable computing and communications systems.
-    {% endsponsor %}
-  {% endwith %}
-
-  {% with title='Information Networking Institute' link='https://www.ini.cmu.edu' image='pactf_web/img/sponsors/ini/big.png' %}
-    {% sponsor %}
-      <a target="_blank" href="{{ link }}">The Information Networking Institute (INI)</a>
-      at Carnegie Mellon educates and develops engineers through technical, interdisciplinary master’s degree programs in information networking, security and mobility that incorporate business and policy perspectives. Our graduates pioneer technological advancements, engineer solutions, and lead enterprises in the global economy.​​
     {% endsponsor %}
   {% endwith %}
 
