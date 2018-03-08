@@ -28,8 +28,8 @@
             ">
             <polyline class="outline" points="
                 0 95
-                10 95
-                10 -60
+                5 95
+                5 -60
                 0 -60
                 0 95
                 "/>
@@ -43,9 +43,9 @@
                 0 50
                 "/>
             <polyline class="outline" points="
-                0 0
+                -5 0
                 230 50
-                0 50
+                -5 50
                 "/>
         </g>
         <polyline class="inline" points="
