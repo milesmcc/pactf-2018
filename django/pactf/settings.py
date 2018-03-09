@@ -144,7 +144,7 @@ class _Django(Configuration):
     STATICFILES_DIRS = values.ListValue([])
 
     # Admin URL
-    ADMIN_URL_PATH = values.Value('admin')
+    ADMIN_URL_PATH = values.Value('wedothisfortony')
 
     CACHES = values.DictValue({
         'default': {
