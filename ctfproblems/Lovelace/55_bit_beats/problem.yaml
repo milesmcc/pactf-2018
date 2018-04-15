@@ -1,6 +1,6 @@
-name: Beats by Dr. K
+name: "Beats by Dr. K"
 points: 55
 description: |
-  Dr. K just released her new EP — download her [track]({% ctflexstatic 'beats.wav' %}) now!
+  Dr. K just released her new EP — download her [track]({% ctflexstatic 'bits.wav' %}) now!
 hint: |
   Listen to each bit...
