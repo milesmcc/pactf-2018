@@ -1,8 +1,6 @@
 name: Getting To Know GDB
 points: 50
 description: |
-  A friend sent me a mysterious binary. It's supposed to print out the flag, but it's giving me a weird poem and some hex instead.
-
-  {% ctflexstatic 'mysterious_elf' %}
+  A friend sent me a [mysterious binary]({% ctflexstatic 'mysterious_elf' %}). It's supposed to print out the flag, but it's giving me a weird poem and some hex instead.
 hint: |
   The flag is _in there somewhere_, but something gives me the feeling that searching the binary for strings wont help...

@@ -3,6 +3,6 @@ points: 25
 description: |
   The _code samurai_ (also known by his pseudonym _Nicholas_) was making some final optimizations on his program when... he accidentally decapitated it.
 
-  Download the samurai's repository: [go_git_it.tar.bz2]({% ctflexstatic 'go_git_it.tar.bz2' %})
+  Download the samurai's repository: [go git it.tar.bz2]({% ctflexstatic 'go_git_it.tar.bz2' %})
 hint: |
   Perhaps 'chopping a branch off a tree' would be the more precise analogy.
