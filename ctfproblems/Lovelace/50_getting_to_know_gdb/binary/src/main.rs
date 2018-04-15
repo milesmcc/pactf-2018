@@ -66,7 +66,7 @@ fn main() {
                 0b01101001u8,
                 0b01101110u8,
                 0b01100111u8,
-                generator.next_u32() as u8
+                *(generator.choose(&vec![' ', ' '])).unwrap() as u8
             ] as &[u8])).unwrap()
         ).unwrap()
     );
