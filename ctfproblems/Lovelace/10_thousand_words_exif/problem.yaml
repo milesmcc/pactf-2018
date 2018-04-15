@@ -1,6 +1,6 @@
 name: A Picture is a Thousand Words
 points: 10
 description: |
-  Apparently there is something hidden in this [image.jpg]({% ctflexstatic 'image.jpg' %})...
+  Apparently there is something hidden in this [image]({% ctflexstatic 'image.jpg' %})...
 hint: |
   You're looking for text—how might you look at the text of the image?
