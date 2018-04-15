@@ -18,6 +18,7 @@ fn main() {
     println!("The flag was in there, all ready to go–but not anymore...");
     println!("  Now all that remains is some random base 64!");
     println!();
+    let mut generator = rand::thread_rng();
     let flag: String = format!(
         "The flag is: {}",
         String::from_utf8(
@@ -64,14 +65,14 @@ fn main() {
                 0b01101101u8,
                 0b01101001u8,
                 0b01101110u8,
-                0b01100111u8
+                0b01100111u8,
+                generator.next_u32() as u8
             ] as &[u8])).unwrap()
         ).unwrap()
     );
     unsafe {
         println!("{}", flag.slice_unchecked(0, 12));
     }
-    let mut generator = rand::thread_rng();
     loop {
         // let location = index % 50;
         // print!("\r{}*{}", std::iter::repeat("-").take(location).collect::<String>(), std::iter::repeat("-").take(49-location).collect::<String>());
