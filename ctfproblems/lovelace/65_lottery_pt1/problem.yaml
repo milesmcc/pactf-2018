@@ -1,4 +1,4 @@
-name: The Lottery, Part One: Spill Your Heart Out!
+name: "The Lottery, Part One: Spill Your Heart Out!"
 points: 65
 description: |
   I was playing this [lottery]({% ctflexstatic 'output' %}). Which number is going to win next time? If only you could see into the future...
