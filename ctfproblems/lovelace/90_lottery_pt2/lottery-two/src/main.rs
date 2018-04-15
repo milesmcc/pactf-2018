@@ -1,0 +1,81 @@
+extern crate mersenne_twister;
+extern crate rand;
+
+use mersenne_twister::MT19937;
+use rand::{Rng, SeedableRng, thread_rng};
+use std::io;
+use std::thread::sleep;
+use std::time;
+
+fn read_input() -> u32 {
+    let mut input = String::new();
+    println!("{}", "What's your guess?");
+    io::stdin().read_line(&mut input).unwrap();
+    input.pop();
+    let mut num_res = u32::from_str_radix(&input, 10);
+    while num_res.is_err() {
+        let mut input = String::new();
+        println!("{}", "Not a valid number! Try again!");
+        io::stdin().read_line(&mut input).unwrap();
+        input.pop();
+        num_res = u32::from_str_radix(&input, 10);
+    }
+    num_res.unwrap()
+}
+
+fn create_flag() -> String {
+    // [84, 104, 101, 32, 102, 108, 97, 103, 32, 105, 115, 32, 34, 103, 101, 116, 45, 114, 105, 99,
+    // 104, 45, 113, 117, 105, 99, 107, 34, 46] are the flag bytes
+    let mut flag: Vec<u8> = vec![];
+    flag.push(84);
+    flag.push(104);
+    flag.extend(vec![84, 101, 32, 102, 108, 97, 103, 32, 105, 115, 32, 34, 103, 101, 116, 45,
+                     114, 105, 99, 104]);
+    flag.extend(vec![45, 113, 117, 105, 99, 107, 34, 46]);
+    String::from_utf8(flag).unwrap()
+}
+
+// only used to prove that it can be broken
+// given 624 nums, produces the 625th
+fn produce_next_num(samples: &[u32]) -> u32 {
+    let mut rng = MT19937::recover(samples);
+    rng.next_u32()
+}
+
+fn main() {
+    println!("{}{}{}", "Feelin' lucky? Play the lottery! ",
+             "Brought to you by the Python Foundation free of charge! ",
+             "Lottery numbers range from 0 to 4,294,967,295.");
+    let mut seed_rng = thread_rng();    
+    let seed: u64 = seed_rng.gen();
+    let mut rng: MT19937 = SeedableRng::from_seed(seed);
+    println!("{}", "To fill you in, these were the last 1000 lottery numbers (wait a couple seconds):\n");
+    sleep(time::Duration::from_millis(7000));
+    let mut samples: Vec<u32> = Vec::new();
+    for i in 0..1000 {
+        let next = rng.next_u32();
+        if 1000-i <= 624 {
+            samples.push(next);
+        }
+        println!("{}", next);
+    }
+
+    // this gives the solution if uncommented
+    // println!("{} {}", "Don't tell anyone, the next number is", produce_next_num(&samples));
+        
+    loop {
+        let winning_num = rng.next_u32();
+        if read_input() == winning_num {
+            println!("-------------");
+            println!("{}{}\"{}\"", "You won the lottery! I can't give you a million dollars,",
+                     " but I can give you the flag: ",
+                     create_flag());
+            println!("-------------");
+            break;
+        }
+        else {
+            println!("Better luck next time! Just to rub it in, {} was the winner!",
+                     winning_num);
+        }
+    }
+}

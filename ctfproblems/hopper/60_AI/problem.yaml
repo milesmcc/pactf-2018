@@ -1,0 +1,6 @@
+name: AI
+points: 80
+description: |
+  [source.txt]({% ctflexstatic 'source.txt' %})
+hint: |
+  What language thinks 3 + '3' == "33"?

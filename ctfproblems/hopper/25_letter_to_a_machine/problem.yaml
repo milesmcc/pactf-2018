@@ -1,0 +1,6 @@
+name: Letter to a Machine
+points: 25
+description: |
+  You intercepted a [letter.rar]({% ctflexstatic 'letter.rar' %})—but to read it, you have to prove that you are _not a human_. The password is `NOT BAD` + `FACE`.
+hint: |
+  I'm sure it's just coincidence that `BAD` and `FACE` can be spelled with just the letters `ABCDEF`...

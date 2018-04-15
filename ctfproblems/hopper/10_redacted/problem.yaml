@@ -1,0 +1,8 @@
+name: Redacted
+points: 10
+description: |
+  ANDOVER, MA— Phillips Academy Capture the Flag releases an institution-wide memorandum on the security of PDF documents. For privacy, parts of the memo are redacted.
+
+  View the memo: [SECURE REDACTED MEMORANDUM]({% ctflexstatic 'SECURE_REDACTED_COPY.pdf' %}).
+hint: |
+  Redaction, huh?

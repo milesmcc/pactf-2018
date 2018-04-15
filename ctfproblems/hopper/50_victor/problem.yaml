@@ -1,0 +1,10 @@
+name: Victor
+points: 50
+description: |
+  Привет, меня зовут Рейно, иначе известный как Виктор. Пожалуйста, расшифруйте это секретное сообщение - у меня нет времени для этого. Я предоставляю вам ключ.
+
+  _Note: the flag contains Cyrillic characters._
+
+  [необходимая информация]({% ctflexstatic 'key.png' %})
+hint: |
+  Google Translate is your friend—but you might want to familiarize yourself with Russian Nihilism, too.

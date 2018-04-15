@@ -1,0 +1,8 @@
+[package]
+name = "lottery-two"
+version = "0.1.0"
+authors = ["Nicholas Miklaucic <nicholas.miklaucic@gmail.com>"]
+
+[dependencies]
+rand = "0.4"
+mersenne_twister = "1.0.1"

@@ -1,0 +1,6 @@
+name: Open Sourcery 2018
+points: 30
+description: |
+  The solution to this problem lies within the Chromium source code. Literally. There is some string in there that mentions a flag and PACTF...
+hint: |
+  This problem builds off of a similarly named problem in PACTF 2017.

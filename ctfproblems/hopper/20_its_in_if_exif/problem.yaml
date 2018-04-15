@@ -1,0 +1,6 @@
+name: It's In, If
+points: 20
+description: |
+  My older brother sent me [this]({% ctflexstatic `itsinif.jpg` %}) photo, but I don't know what to make of it.
+hint: |
+  What might big brother know?

@@ -1,0 +1,6 @@
+name: Let Me In
+points: 20
+description: |
+  You received this [account.rar]({% ctflexstatic 'account.rar' %}) file, but it is 'protected' under a password. Can you break in?
+hint: |
+  Something tells me the user might not be using complex passwords...

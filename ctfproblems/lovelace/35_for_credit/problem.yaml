@@ -1,0 +1,8 @@
+name: Credit Card Leak
+points: 35
+description: |
+  ShoeShop was hacked, and all of their customer records were released online—including credit card numbers. One credit card in the leak is invalid, however. What is the invalid credit card number?
+
+  Here's the leak: [cc_leak.txt.bz2]({% ctflexstatic 'cc_leak.txt.bz2' %})
+hint: |
+  The credit card numbers in the leak are obviously _all_ invalid, but most would pass a certain credit card validity test. All credit card numbers except one, that is.
