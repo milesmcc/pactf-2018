@@ -1,6 +1,6 @@
 name: AI
 points: 80
 description: |
-  [source.txt]({% ctflexstatic 'source.txt' %})
+  Our artificial intelligence engineer made a groundbreaking discovery, but left the company unexpectedly... all we have is the obfuscated [source.txt]({% ctflexstatic 'source.txt' %})...
 hint: |
   What language thinks 3 + '3' == "33"?

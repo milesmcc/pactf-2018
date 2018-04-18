@@ -1,6 +1,6 @@
 name: Library of Babel
 points: 75
 description: |
-  [video]({% ctflexstatic 'video.mp4' %})
+  Is [this]({% ctflexstatic 'video.mp4' %}) what passes through fiber optic cables? Must be...
 hint: |
-  It is much faster to extract frames from the video and write a script.
+  It is much faster to extract frames from the video and write a script!

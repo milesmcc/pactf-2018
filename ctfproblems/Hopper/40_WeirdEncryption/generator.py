@@ -33,5 +33,5 @@ def vign(txt='', key='', typ='d'):
 def generate(key):
 	key = ("V1gnette_%s" % str(key))
 	key = vign(key, 'itsAvIg', 'e')
-	return ("""You are a military commander. Some poor intern has tried encrypting their messages to you. They gave you this string: "%s". Well now youl're gonna have to spend all afternoon on this. Sigh."""%str(key),
-			"""He also scribbled the string 'it??v??' at the bottom. Not sure what that could mean. And remember to include the underscore!""")
+	return ("""You are a military commander. Some poor intern has tried encrypting their messages to you. They gave you this string: `%s`. Well now you're going to have to spend all afternoon on this..."""%str(key),
+			"""They also scribbled the string 'it??v??' at the bottom. Not sure what that could mean. And remember to include the underscore!""")
