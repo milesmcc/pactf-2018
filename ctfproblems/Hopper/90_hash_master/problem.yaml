@@ -1,0 +1,22 @@
+name: Hash Master
+points: 90
+description: |
+  Miles forgot his login for [OPENWI:RE](https://openwi.re), so he asked Darcy to send a password reset. Instead, she gave him the hash of his password—and the custom hashing algorithm. Miles doesn't have great password security, so you could probably brute force it... but maybe there's a way to do this more efficiently?
+
+  Here is the hash of Miles' password: `293366475`
+
+  Here is the hashing algorithm:
+
+  ```python
+  def hash_it(string):
+      q = 0
+      z = 127
+      for i in [int(byte) for byte in bytearray(string, "utf-8")]:
+          q += i
+          z *= i
+      return (((q << 3)+1)*z) % (2**32 - 1)
+  ```
+hint: |
+  Okay, [OPENWI:RE](https://openwi.re) isn't part of this problem. But you should still subscribe! If you're interested in what else the PACTF team has been working on individually, check out [Miles' personal site](https://rmrm.io) and Igor's [IcyBounce](https://icybounce.com). Alex has been doing some [cool things too](https://reichenbach.org/).
+
+  Oh, by the way, Miles' shift keys don't work—and he's not a big fan of numbers.
