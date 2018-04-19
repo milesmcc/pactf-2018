@@ -1,0 +1,7 @@
+name: Wakanda problem is this?
+points: 60
+description: |
+  You've arrived at Wakanda's border. Only the flag will allow you to enter.
+  [This is all you have.]({% ctflexstatic 'gate.jpg' %})
+hint: |
+  Use the bytes in the second image.
