@@ -20,7 +20,7 @@ teamnames = {
 def grade(key, submission):
     if str(key) in urls:
         try:
-            if teamnames[str(key)] in requests.get(urls[str(key)]).text:
+            if teamnames[str(key)] in requests.get(urls[str(key)], timeout=1).text:
                 return True, "Congratulations! You have completed the PACTF tiebreaker. Please see the scoreboard to see how your time stacks up."
             else:
                 return False, "Nope, sorry! Didn't see your team name there!"
