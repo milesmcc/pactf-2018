@@ -1,7 +1,7 @@
 import requests
 
 urls = {
-    "943461037": "http://1.2.3.4", #PACTF
+    "943461037": "https://hastebin.com/raw/vuwibewani", #PACTF
     "1371804441": "your server's IP here (0x5F3759DF)", #0x5F3759DF
     "1148064481": "your server's IP here (meephackerz)", #meephackerz
     "1151734498": "your server's IP here (pearl)", #pearl
