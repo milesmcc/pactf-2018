@@ -25,6 +25,6 @@ def grade(key, submission):
             else:
                 return False, "Nope, sorry! Didn't see your team name there!"
         except:
-            return False, "Unable to complete the request " % urls[str(key)]
+            return False, "Unable to complete the request to %s" % urls[str(key)]
     else:
         return False, "Sorry, your team is not eligible to compete in the tiebreaker."
