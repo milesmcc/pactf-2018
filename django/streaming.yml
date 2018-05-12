@@ -1,0 +1,6 @@
+title: "Streaming Attack Updated"
+window: Hopper
+problems:
+  - 26d60dfb-8213-487b-8409-de512566102a
+body: |
+  Streaming Attack has been updated. While the original version of the challenge is solvable, the updated version is clearer.
