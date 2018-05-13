@@ -1,11 +1,11 @@
 import requests
 
 urls = {
-    "943461037": "https://hastebin.com/raw/vuwibewani", #PACTF
-    "1371804441": "your server's IP here (0x5F3759DF)", #0x5F3759DF
-    "1148064481": "your server's IP here (meephackerz)", #meephackerz
-    "1151734498": "your server's IP here (pearl)", #pearl
-    "1308889865": "your server's IP here (SST CTF)", #SST CTF
+    "943461037": "http://138.197.169.209:80", #PACTF
+    "1371804441": "http://165.227.42.60:80", #0x5F3759DF
+    "1148064481": "http://165.227.47.98:80", #meephackerz
+    "1151734498": "http://159.203.63.220:80", #pearl
+    "1308889865": "http://165.227.40.229:80", #SST CTF
 }
 
 teamnames = {
